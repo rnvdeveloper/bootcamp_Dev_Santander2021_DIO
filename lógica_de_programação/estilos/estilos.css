@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(110, 159, 250);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    margin: auto;
+    margin-bottom: 100px;
+    text-align: justify;
+    width: 900px;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-shadow: 2px 2px black;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-shadow: 2px 2px black;
+    text-transform: uppercase;
+}
+
+img {
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+li {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

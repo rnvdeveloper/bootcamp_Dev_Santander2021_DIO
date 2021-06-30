@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rato"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-06-28 01:23:33 "/>
+        <attribute name="created" value="UmF0bztOMTsyMDIxLTA2LTI0OyIwNjoyNDoyNyAiOzE3MjY="/>
+        <attribute name="edited" value="UmF0bztOMTsyMDIxLTA2LTI4OyIwMToyMzozMyAiOzY7MTgzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Jan, Fev, Mar, Abr, media" type="Real" array="False" size=""/>
+            <input variable="Jan"/>
+            <input variable="Fev"/>
+            <input variable="Mar"/>
+            <input variable="Abr"/>
+            <assign variable="media" expression="(Jan + Fev + Mar + Abr)/4"/>
+            <output expression="media" newline="False"/>
+            <if expression="media &gt; 5000">
+                <then>
+                    <output expression="&quot;Parab&#233;ns, voc&#234; superou a meta do quarter e receber&#225; um abono de 10%!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Parab&#233;ns, voc&#234; est&#225; detnro da meta do quarter e receber&#225; um abono de 3%!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
