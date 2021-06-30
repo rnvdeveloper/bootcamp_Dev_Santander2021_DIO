@@ -5,8 +5,8 @@
 }
 
 @font-face {
-    font-family: 'Calibri-7';
-    src: url("/estilos/calibri-7.ttf") format("truetype");
+    font-family: 'calibri';
+    src: url(../estilos/calibri.ttf) format("truetype");
     font-weight: bolder;
     font-style: normal;
 }
@@ -15,7 +15,7 @@ body {
     background-color: #64EAD1;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-family: Calibri-7;
+    font-family: calibri;
     font-size: 1.3em;
     line-height: 1.3em;
     margin: auto;
