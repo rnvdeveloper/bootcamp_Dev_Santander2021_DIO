@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Calibri-7';
+    src: url("/estilos/calibri-7.ttf") format("truetype");
+    font-weight: bolder;
+    font-style: normal;
+}
+
+body {
+    background-color: #64EAD1;
+    color: black;
+    font-family: Calibri-7;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    margin: auto;
+    margin-bottom: 100px;
+    padding: 20px;
+    text-align: justify;
+    width: 1000px;
+}
+
+p {
+    margin: 15px;
+}
+
+h1 {
+    background-color: #CC0000;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding: 30px;
+    text-align: center;
+    text-shadow: 3px 3px black;
+    text-transform: uppercase;
+}
+
+h2 {
+    background-color: #5DDDC5;
+    box-shadow: 0 0 1px black;
+    font-size: 1.2em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 30px;
+    text-transform: uppercase;
+}
+
+li {
+    margin: 10px;
+    margin-left: 50px;
+}
+
+a {
+    color: #CC0000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F6942A;
+    transition: .5s;
+}
