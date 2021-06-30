@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'calibri';
-    src: url(../estilos/calibri.ttf) format("truetype");
+    src: url("../estilos/calibri.ttf") format("truetype");
     font-weight: bolder;
     font-style: normal;
 }
