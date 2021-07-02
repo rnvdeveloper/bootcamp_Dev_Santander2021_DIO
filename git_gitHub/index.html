@@ -16,7 +16,8 @@
     <p>Aqui você irá encontrar as notas e o conteúdo que criei duarante o curso de Git e GitHub da <a
             href="https://digitalinnovation.one/" target="_blank">Digital Innovation One</a> e o <a
             href="img/certificado_9EA5D497.pdf" target="_blank">Certificado</a> de conclusão deste curso.</p>
-    <p>Este conteúdo reflete o conhecimento adquirido, mas não limitado a este conteúdo, uma vez que utilizei referências
+    <p>Este conteúdo reflete o conhecimento adquirido, mas não limitado a este conteúdo, uma vez que utilizei
+        referências
         externas para a ampliação do conhecimento e do conteúdo aqui descrito.</p>
     <p>Existem duas interfaces do GIT, sendo GUI (Graphic User Interface) vs CLI (Comand Line Interface), neste curso
         será abordada a CLI que é a forma que ele foi concebido para interagir.</p>
@@ -24,13 +25,14 @@
     <div class="imgAlign"><img src="img/definição_git_criador.PNG" alt="cirador do GIT"></div>
     <legend>Criador do Git 🔥</legend>
 
-    <div> <!--Comandos Gerais-->
-        <h2>Comandos Básicos</h2>
-        <p>Iremos aprender aqui os comandos básicos para conseguir navegar dentro do ambiente: navegar entre pastas,
-            listar
-            pastas, criar pastas/arquivos e deletar pastas/arquivos</p>
-        <p>Nota 1: Serão utilizados (no caso deste estudante) os comandos para Windows que são derivados do Shell. <br>
-            Nota 2: Onde se lê "pasta", leia-se também "diretório"</p>
+    <h2>Comandos Gerais</h2>
+    <p>Iremos aprender aqui os comandos básicos para conseguir navegar dentro do ambiente: navegar entre pastas,
+        listar
+        pastas, criar pastas/arquivos e deletar pastas/arquivos</p>
+    <p>Nota 1: Serão utilizados (no caso deste estudante) os comandos para Windows que são derivados do Shell. <br>
+        Nota 2: Onde se lê "pasta", leia-se também "diretório"</p>
+    <div>
+        <!--Comandos Gerais-->
         <ul>
             <li>cls (clear screen)</li>
             <p>Este comando é utilizado para limpar o terminal após pesquisa e/navegação.</p>
@@ -97,9 +99,12 @@
                 - Ctrl + l para limpar a tela do git.</P>
         </ul>
     </div>
-    <div><!-- Comandos para manipulação do github-->
-        <h2>Comandos para manipulação do gitHub</h2>
-        <p>Nesta lista foram adicionados alguns comandos do curso de Git da <a href="https://www.gama.academy/" target="_blank">Gama academy</a> e também de outras fontes externas e são comandos essenciais para a manipulação dos arquivos do github no git bash.</p>
+    <h2>Comandos para manipulação do gitHub</h2>
+    <p>Nesta lista foram adicionados alguns comandos do curso de Git da <a href="https://www.gama.academy/"
+            target="_blank">Gama academy</a> e também de outras fontes externas e são comandos essenciais para a
+        manipulação dos arquivos do github no git bash.</p>
+    <div>
+        <!-- Comandos para manipulação do github-->
         <ul>
             <li>git config --list</li>
             <p>Este comando retorna todas as configurações que estão definidas no seu GIT.</p>
@@ -128,16 +133,22 @@
             <p>Para fazer o clone de um repositório deverá ser executado o comando da seguitne forma:</p>
             <p>> git clone endereçoDoRepositórioRemotoDoClone (que é a url do repositório remoto).</p>
             <li>git show</li>
-            <p>Este comando exibe as alterações de um commit a partir de um SHA1 indicado para verificação ou caso não seja informado o SHA1 para verificação, ele exibirá o último commit realizado.</p>
+            <p>Este comando exibe as alterações de um commit a partir de um SHA1 indicado para verificação ou caso não
+                seja informado o SHA1 para verificação, ele exibirá o último commit realizado.</p>
             <li>git log</li>
-            <p>Retorna o histórico de alterações de um commit com o SHA1 criado, o autor, a data e o comentário da alteração.</p>
+            <p>Retorna o histórico de alterações de um commit com o SHA1 criado, o autor, a data e o comentário da
+                alteração.</p>
             <li>git ignore</li>
-            <p>Este não é um comando, mas um arquivo que é de uso recomendado pelo github e pode, mas não obrigatoriamente deve ser inserido no repositório. Este arquivo lista tdos os arquivos/conteúdos que não devem ser exibidos no github quando feito o push.</p>
+            <p>Este não é um comando, mas um arquivo que é de uso recomendado pelo github e pode, mas não
+                obrigatoriamente deve ser inserido no repositório. Este arquivo lista tdos os arquivos/conteúdos que não
+                devem ser exibidos no github quando feito o push.</p>
             <p></p>
         </ul>
     </div>
-    <div> <!--conceitos fundamentais da tecnologia-->
-        <h2>CONCEITOS FUNDAMENTAIS DA TECNOLOGIA</h2>
+    <h2>CONCEITOS FUNDAMENTAIS DA TECNOLOGIA</h2>
+    <div>
+        <!--conceitos fundamentais da tecnologia-->
+
         <ul>
             <li>SHA1</li>
             <p>A sigla SHA significa Secure Hash Algorithm (Algoritmo de Hash Seguro), que é um conjunto de funções hash
@@ -161,7 +172,7 @@
             <p>O GIT manipula os arquivos como objetos, assim, temos uma cadeia de objetos relacionados entre si
                 formando uma estrutura ramificada e interrelacionada onde cada alteração em qualquer um dos objetos
                 influencia e resulta em um novo SHA1.</p>
-            <ul>
+            <ul class="listaMais">
                 <li>BLOBS</li>
                 <p>São os blocos básicos de composição que armazena metadados do arquivo.</p>
                 <p>O Git constrói um cabeçalho que começa com o tipo do objeto, neste caso um blob. Em seguida, é
@@ -170,9 +181,9 @@
                 <li>TREES</li>
                 <p>Armazena e aponta para blobs diferentes e outras trees e commits.</p>
                 <p>A árvore armazena a estrutura de rastreabilidade dos arquivos e dentro da cadeia recebe seu próprio
-                    SHA1 como já mencionado anteriormente. <a
-                        href="img/definição_representação_tree.PNG" target="_blank">Ver imagem</a> do bloco e <a
-                        href="img/arvore_estrtura.PNG" target="_blank">ver imagem </a>da estrutura da árvore.</p>
+                    SHA1 como já mencionado anteriormente. <a href="img/definição_representação_tree.PNG"
+                        target="_blank">Ver imagem</a> do bloco e <a href="img/arvore_estrtura.PNG" target="_blank">ver
+                        imagem </a>da estrutura da árvore.</p>
                 <li>COMMITS</li>
                 <P>O commit é o ojeto mais importante, pois é o concatenador de toda a estrutura, ele apponta para a
                     árvore, última alteração, autor, mensagem e marcação de tempo. <a
@@ -197,8 +208,10 @@
                 dentro desse VCS pode ser alterado e que nada pode ser perdido sem que ele perceba.</p>
         </ul>
     </div>
-    <div>  <!--primeiros comandos com git-->
-        <h2>Primeiros comandos com GIT</h2>
+    <h2>Primeiros comandos com GIT</h2>
+    <div>
+        <!--primeiros comandos com git-->
+
         <ul>
             <li>git init</li>
             <p>Quando utilizamos o comando git init, estamos criando um repositório no diretório. </p>
@@ -218,10 +231,12 @@
             <p>Este comando insere um arquivo criado, mas ainda não rastreado, diretamente para o estado de staged no
                 GIT, ou seja, ele passa a ser conhecido pelo GIT.</p>
 
-            <p>Ao ser executado ele move também os arquivos modificados para o estado de staged e por esta razão também ele deverá ser executado antes de executar o git commit. <a href="img/git_add_img.PNG" target="_blank">Ver imagem</a></p>
+            <p>Ao ser executado ele move também os arquivos modificados para o estado de staged e por esta razão também
+                ele deverá ser executado antes de executar o git commit. <a href="img/git_add_img.PNG"
+                    target="_blank">Ver imagem</a></p>
             <p></p>
 
-            <li>git Commit</li>
+            <li>git commit</li>
             <p>> git commit -m "commit inicial"</p>
             <p>O comando acima direciona todos os arquivos agrupados no estado de staged para o estado de unmodifed
                 dentro do respositório gerando um snapchot que é um registro do código no momento do commit, e iniciando
@@ -232,12 +247,13 @@
                 dentro do tracking.</p>
         </ul>
     </div>
-    <div> <!--tracked e untracked-->
-        <h2>Tracked e Untracked</h2>
+    <h2>Tracked e Untracked</h2>
+    <div>
+        <!--tracked e untracked-->
         <ul>
             <li>Tracked</li>
             <p>Arquivos de conhecimento e rastreados pelo GIT.</p>
-            <ul>
+            <ul class="listaMais">
                 <li>Unmodified</li>
                 <p>Arquivo já existente no repositório do GIT. Quando o arquivo é aberto e alterado o GIT faz a
                     comparação do SHA1 do arquivo não modificado com o SHA1 do arquivo aberto e identifica a alteração.
@@ -258,8 +274,9 @@
                 levaods ao estado de staged. <a href="img/tracking_chart.PNG" target="_blank">Ver imagem</a></p>
         </ul>
     </div>
-    <div> <!--repositórios-->
-        <h2>repositórios</h2>
+    <h2>repositórios</h2>
+    <div>
+        <!--repositórios-->
         <ul>
             <li>Ambiente de Desenvolvimento - Repositório Local</li>
             <p>Esta é a máquina do usuário composta pelo diretório de trabalho, área de staging e repositório local,
@@ -275,23 +292,23 @@
 
         <p><a href="img/repositório_chart.PNG" target="_blank">Ver imagem</a></p>
     </div>
-    <div><!--resolução de conflitos-->
-        <h2>Resolução de conflitos</h2>
-        <p>Os conflitos como exemplificado durante o curso são gerados no momento em que se vai executar o merge de
-            arquivos que estão sendo alterados por diferentes usuários, ou seja, um projeto no qual há 2 ou mais
-            desenvolvedores envolvidos.</p>
-        <p>Isso quer dizer que, existe uma versão supostamente mais atualizada no repositório remoto, mas que está sendo
-            atualizada separadamente no repositório local de mais de um desenvolvedor, quando um deles faz o merge das
-            alterações no repositório remoto, irá gerar um conflito com o segundo dev que não terá a versão mais
-            atualizada do documento em seu respositório local.</p>
-        <p>Para resolver esse conflito é necessário baixar o arquivo, compará-los e fazer as alterações manualmente e só
-            então fazer o push da versão mais atual e resolvida para o repositório remoto.</p>
-        <p><a href="img/conflitos_merge.PNG" target="_blank">Ver imagem</a></p>
-    </div>
-    <div><!--fim do curso-->
-        <h2>Aqui termina mais um curso rumo ao sucesso!</h2>
-        <p>Se quiser comentar, contribuir ou conectar é só entrar em contato. </p>
-    </div>
+    <h2>Resolução de conflitos</h2>
+    <!--resolução de conflitos-->
+    <p>Os conflitos como exemplificado durante o curso são gerados no momento em que se vai executar o merge de
+        arquivos que estão sendo alterados por diferentes usuários, ou seja, um projeto no qual há 2 ou mais
+        desenvolvedores envolvidos.</p>
+    <p>Isso quer dizer que, existe uma versão supostamente mais atualizada no repositório remoto, mas que está sendo
+        atualizada separadamente no repositório local de mais de um desenvolvedor, quando um deles faz o merge das
+        alterações no repositório remoto, irá gerar um conflito com o segundo dev que não terá a versão mais
+        atualizada do documento em seu respositório local.</p>
+    <p>Para resolver esse conflito é necessário baixar o arquivo, compará-los e fazer as alterações manualmente e só
+        então fazer o push da versão mais atual e resolvida para o repositório remoto.</p>
+    <p><a href="img/conflitos_merge.PNG" target="_blank">Ver imagem</a></p>
+
+    <h2>Aqui termina mais um curso rumo ao sucesso!</h2>
+    <!--fim do curso-->
+    <p>Se quiser comentar, contribuir ou conectar é só entrar em contato. </p>
+
 </body>
 
 </html>
