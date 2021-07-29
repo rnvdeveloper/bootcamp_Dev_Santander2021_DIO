@@ -9,42 +9,55 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-family: Calibri;
     font-weight: 400;
-    font-size: 1em;
     line-height: 1.3em;
+    max-width: 1000px;
     margin: auto;
-    margin-bottom: 100px;
-    padding: 20px;
+    padding: 10px;
     text-align: justify;
-    width: 1000px;
+    margin-bottom: 100px;
+}
+
+p {
+    margin: 15px;
+
 }
 
 h1 {
     background-color: #CC0000;
-    color: white;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    padding: 30px;
-    text-align: center;
     text-shadow: 2px 2px black;
+    color: white;
+    padding: 20px;
     text-transform: uppercase;
+    text-align: center;
+    line-height: 1.3em;
 }
 
 h2 {
     background-color: #5DDDC5;
     box-shadow: 0 0 1px black;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
     text-align: center;
-    padding: 30px;
     text-transform: uppercase;
+    line-height: 1.3em;
 }
 
-p {
-    margin: 20px;
+h3 {
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    line-height: 1em;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1.3em;
 }
 
-div p {
-    margin-left: 50px;
+h4 {
+    margin-left: 20px;
 }
 
 img {
@@ -62,13 +75,41 @@ legend {
     margin-bottom: 40px;
 }
 
-li {
-    color: #CC0000;
-    margin-left: 40px;
+h4::selection {
+    background: rgb(50, 200, 250);
+
 }
 
-.listaMais {
-    margin-left: 40px;
+strong::selection,
+a::selection,
+p::selection,
+li::selection {
+    background: red;
+    color: white;
+}
+
+h1::selection {
+    background: black;
+    color: white;
+}
+
+h2::selection {
+    background: black;
+    color: white;
+}
+
+h3::selection {
+    background: black;
+    color: white;
+}
+
+ul {
+    margin: 10px;
+    margin-left: 30px;
+}
+
+li {
+    color: red;
 }
 
 a {
@@ -81,94 +122,33 @@ a:hover {
     transition: .5s;
 }
 
-@media (max-width: 1005px) {
+@media (max-width: 600px) {
     body {
-        font-size: 16px;
+        font-size: 13px;
         line-height: 1.2em;
-        padding: 10px;
-        width: 95vw;
-    }
-
-    h1 {
-        margin-bottom: 30px;
-        margin-top: 20px;
-        padding: 30px;
-    }
-    
-    h2 {
-        margin-top: 50px;
-        margin-bottom: 50px;
-        padding: 30px;
-
-    }
-    
-    h3 {
-        font-size: 1.2em;
-        margin-top: 50px;
-        margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 800px) {
-    body {
-        font-size: 14px;
-        line-height: 1.2em;
-        padding: 10px;
-        width: 95vw;
-    }
-
-    h1 {
-        font-size: 1.3em;
-        margin-bottom: 20px;
-        margin-top: 15px;
-        padding: 20px;
-    }
-    
-    h2 {
-        font-size: 1.3em;
-        margin-top: 35px;
-        margin-bottom: 35px;
-        padding: 20px;
-    }
-    
-    h3 {
-        font-size: 1.3em;
-        margin-top: 35px;
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 500px) {
-    body {
-        font-size: 12px;
-        line-height: 1.2em;
-        padding: 10px;
         width: 100vw;
     }
 
-    h1 {
-        font-size: 1em;
-        margin-bottom: 15px;
-        margin-top: 10px;
-        padding: 15px;
-    }
-
-    h2 {
-        font-size: 1em;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        padding: 15px;
+    img {
+        max-width: 200px;
     }
 
     h3 {
-        font-size: 1em;
-        margin-top: 25px;
-        margin-bottom: 15px;
-        padding: 10px;
+        text-align: center;
+        line-height: 1.5;
     }
 
-    li {
-        margin: 5px;
-        margin-left: 25px;
+    h4 {
+        margin-left: 15px;
+    }
+
+    ul {
+        margin: 10px;
+        margin-left: 15px;
+    }
+    
+    .stickyResp {
+        position: sticky;
+        top: 0;
     }
 }
